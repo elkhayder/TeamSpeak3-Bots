@@ -1,0 +1,77 @@
+/* Wrote down by ElkhayDer */
+/* Facebook: https://www.facebook.com/ElkhayDerZakaria */
+/* WebSite: https://www.TheDeathlyElite.xyz */
+/* TeamSpeak: voice.TheDeathlyElite.xyz */
+
+@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
+@import url("https://fonts.googleapis.com/css?family=Acme");
+@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
+@import url("//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css");
+
+.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.material-switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
+}
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem; }
+.alert-fill-danger {
+  color: #ffffff;
+  background-color: #e65251;
+  border-color: #e65251; }
+.alert-fill-danger hr {
+    border-top-color: #e33c3b; }
+.alert-fill-success {
+  color: #ffffff;
+  background-color: #00ce68;
+  border-color: #00ce68; }
+.alert-fill-success hr {
+    border-top-color: #00ce68; }
+.alert-fill-danger .alert-link {
+    color: #e6e6e6; }
+.community-title {
+	font-family: 'Acme', sans-serif;
+}
